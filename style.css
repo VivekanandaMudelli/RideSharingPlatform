@@ -1,0 +1,121 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #d9f4ff, #a7e0ff);
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: white;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+}
+
+header .tagline {
+  font-size: 1em;
+  opacity: 0.9;
+}
+
+.role-nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 25px;
+}
+
+.role-nav button {
+  flex: 1;
+  min-width: 180px;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.role-nav button:hover {
+  transform: scale(1.07);
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+main {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  min-height: 400px;
+  max-width: 700px;
+  margin: auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+main h2 {
+  margin-bottom: 15px;
+  color: #0072ff;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 5px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+#audit, #trackResult {
+  margin-top: 15px;
+}
+
+#audit p, #trackResult p {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border-left: 5px solid #00c6ff;
+}
+
+footer {
+  text-align: center;
+  margin: 30px 0 10px;
+  font-size: 0.9em;
+  color: #444;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
